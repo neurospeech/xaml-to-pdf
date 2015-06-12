@@ -1,0 +1,54 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="306"
+              PageHeight="396"
+              PageWidth="306"
+              PagePadding="0"
+    FontSize="14"
+    FontFamily="Arial">
+    <BlockUIContainer>
+        <Grid Width="306" Height="396">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition />
+                <RowDefinition Height="5"/>
+                <RowDefinition />
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<Border Grid.Row="1" Grid.Column="1" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg"  />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="3" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" />
+            </Border>
+            <Border Grid.Row="3" Grid.Column="1" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" />
+            </Border>
+            <Border Grid.Row="3" Grid.Column="3" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" />
+            </Border>-->
+
+            <Border Grid.Row="1" Grid.Column="1" ClipToBounds="True">
+
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-60,0,-60,-60" />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="3" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-60,0,-60,-60" />
+            </Border>
+            <Border Grid.Row="3" Grid.Column="1" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-60,0,-60,-60" />
+            </Border>
+            <Border Grid.Row="3" Grid.Column="3" ClipToBounds="True">
+                <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-60,0,-60,-60" />
+            </Border>
+        </Grid>
+    </BlockUIContainer>
+
+</FlowDocument>

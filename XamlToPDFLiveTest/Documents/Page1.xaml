@@ -1,0 +1,48 @@
+﻿<Page x:Class="XamlToPDFLiveTest.Documents.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="396" d:DesignWidth="306"
+	Title="Page1">
+
+    <FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="306"
+              PageHeight="396"
+              PageWidth="306"
+                  PagePadding="0"
+    FontSize="14"
+    FontFamily="Arial">
+        <BlockUIContainer>
+            <Grid Width="306" Height="396">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="5"/>
+                    <RowDefinition />
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" ClipToBounds="True">
+                    <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-35,0,-35,-35" />
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" ClipToBounds="True">
+                    <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-35,0,-35,-35"/>
+                </Border>
+                <Border Grid.Row="2" Grid.Column="0" ClipToBounds="True">
+                    <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-35,0,-35,-35"/>
+                </Border>
+                <Border Grid.Row="2" Grid.Column="2" ClipToBounds="True">
+                    <Image  Source="http://d2lcywqhfczovm.cloudfront.net/tfs/44480/161778/4xzj.jpg/700.jpg" Margin="-35,0,-35,-35"/>
+                </Border>
+
+            </Grid>
+        </BlockUIContainer>
+
+    </FlowDocument>
+</Page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NeuroSpeech.XamlToPDF</id>
+    <version>2.28</version>
+    <title>NeuroSpeech XamlToPDF</title>
+    <authors>akash.kava</authors>
+    <owners></owners>
+    <description>
+      Xaml FlowDocument to PDF Converter
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      Xaml FlowDocument to PDF Converter
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://nuget.org/packages/XamlToPDF.NuGet</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright  2015</copyright>
+    <references></references>
+    <tags>xaml,pdf,xaml-to-pdf,xamltopdf</tags>
+  </metadata>
+  <files>
+    <file src="..\NeuroSpeech.XamlToPDF\bin\Debug\NeuroSpeech.XamlToPDF.dll" target="lib" />
+    <file src="..\NeuroSpeech.XamlToPDF\bin\Debug\NeuroSpeech.XamlToPDF.pdb" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>
