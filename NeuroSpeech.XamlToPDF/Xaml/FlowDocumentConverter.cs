@@ -114,7 +114,8 @@ namespace NeuroSpeech.XamlToPDF.Xaml
 				if (at == null)
 					continue;
 				string url = at.Value;
-				if (url.StartsWith("http://") || url.StartsWith("https://")) {
+				//if (url.StartsWith("http://") || url.StartsWith("https://")) 
+                {
 
 					string urlKey = at.Value.ToLower();
 					DownloadItem file = null;
@@ -176,9 +177,17 @@ namespace NeuroSpeech.XamlToPDF.Xaml
 		private void DownloadFile(DownloadItem item)
 		{
 			try {
-                using (WebClient client = new WebClient())
+                string url = item.Url;
+                if (url.StartsWith("//"))
                 {
-                    client.DownloadFile(item.Url, item.FilePath);
+                    url = "http:" + url;
+                }
+                if (url.StartsWith("http://", StringComparison.OrdinalIgnoreCase) || url.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
+                {
+                    using (WebClient client = new WebClient())
+                    {
+                        client.DownloadFile(item.Url, item.FilePath);
+                    }
                 }
 			}
 			catch { 
