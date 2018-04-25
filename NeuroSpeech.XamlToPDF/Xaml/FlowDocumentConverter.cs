@@ -25,6 +25,9 @@ namespace NeuroSpeech.XamlToPDF.Xaml
             get {
                 return _TempPath ?? Path.GetTempPath();
             }
+	    set {
+	        _TempPath = value;
+	    }
         }
 
         private FlowDocument flowDoc;
