@@ -20,6 +20,13 @@ namespace NeuroSpeech.XamlToPDF.Xaml
 	public class FlowDocumentPackage : IDisposable
 	{
 
+        private static string _TempPath = null;
+        public static string TempPath {
+            get {
+                return _TempPath ?? Path.GetTempPath();
+            }
+        }
+
         private FlowDocument flowDoc;
         //private XpsSerializationManager XSrm;
         //private XpsPackagingPolicy XPolicy;
@@ -36,7 +43,7 @@ namespace NeuroSpeech.XamlToPDF.Xaml
 
             toDispose = new List<IDisposable>();
 
-			TempFolder = new DirectoryInfo(Path.GetTempPath() + "\\XamlToPDF\\" + DateTime.Now.Ticks.ToString());
+			TempFolder = new DirectoryInfo(TempPath + "\\XamlToPDF\\" + DateTime.Now.Ticks.ToString());
 			if (!TempFolder.Exists)
 				TempFolder.Create();
 
